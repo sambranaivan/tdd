@@ -2,12 +2,17 @@ package nuevo;
 
 public class Calculadora {
 
-	public int sumar(int i, int j) {
-		return i+j;
+	public String sumar(int i, int j) {
+		
+		if(i == Integer.MAX_VALUE || j == Integer.MAX_VALUE)
+		{
+			return "Overflow";
+		}
+		return String.valueOf(i+j);
 	}
 
 	public String dividir(int i, int j) {
-		// TODO Auto-generated method stub
+		
 		if(i == 0 || j == 0)
 		{
 			return "error no se puede dividir por cero";
