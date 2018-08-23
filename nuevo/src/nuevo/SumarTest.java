@@ -12,5 +12,6 @@ public class SumarTest {
 		int resultado = calc.sumar(2,2);
 		assertEquals(4, resultado);
 	}
+	
 
 }
